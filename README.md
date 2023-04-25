@@ -24,6 +24,7 @@ Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
 From the root directory of this repository, run `docker-compose up`. This will build the Docker images for the frontend and backend and run both containers.
 
+Note that if you choose to use Docker for this application, you may need to rebuild images after adding dependencies to the frontend or backend during your exercise.
 ### Native
 Alternatively, you can set up both the frontend and backend natively.
 
