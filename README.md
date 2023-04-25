@@ -10,7 +10,7 @@ This repository includes a barebones full-stack web application built with the f
 * Frontend
     * Javascript
     * [Vue.js](https://vuejs.org/)
-    * chart lib?
+    * [Chart.js](https://www.chartjs.org/docs/latest/)
 
 This application mimics a standard data visualization application at CDS.ai - a Python-based backend reads data, manipulates it, and returns it. A Javascript-based frontend retrieves this data from the backend and visualizes it.
 

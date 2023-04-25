@@ -6,7 +6,8 @@ This directory contains a Vue 3 application built using [create-vue](https://git
 * Vue.js@3
 * Eslint (code linting)
 * Prettier (code formatting)
-* Bootstrap (styles)
+* Bootstrap 5 (styles)
+* Chart.js
 
 See the README in the repository root for installation instructions.
 
