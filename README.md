@@ -38,7 +38,7 @@ Install [Node.js 18 or later](https://nodejs.org/en/download). From the `fronten
 Once installed and running, the backend will be available at `http://localhost:8000` and the frontend will be available at `http://localhost:5173`.
 
 ## Tasks
-What follows is a list of tasks you can perform in this repository. These are roughly separated into four buckets: frontend, backend, orchestration, and engineering. Please spend no more than 4 hours total on this exercise, and be prepared to talk about your process in your upcoming interview.
+What follows is a list of tasks you can perform in this repository. These are roughly separated into three buckets: frontend, backend, and full stack. Please spend no more than 4 hours total on this exercise, and be prepared to talk about your process in your upcoming interview.
 
 ### Frontend
 * Bar Chart Changes:
