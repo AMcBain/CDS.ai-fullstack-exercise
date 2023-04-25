@@ -40,10 +40,29 @@ Once installed and running, the backend will be available at `http://localhost:8
 What follows is a list of tasks you can perform in this repository. These are roughly separated into four buckets: frontend, backend, orchestration, and engineering. Please spend no more than 4 hours total on this exercise, and be prepared to talk about your process in your upcoming interview.
 
 ### Frontend
-* placeholder task
+* Bar Chart Changes:
+    * The categories in the bar charts are not cased for display (`education_level` instead of `Education Level`). Add formatting for the category, both in the title of the visualization and the tooltip.
+    * In the `education_level` bar chart, order the education levels.
+    * Refactor the bar chart component to show percentages instead of counts.
+        * As an optional addition, refactor this chart to be a stacked bar chart in which each bar shows the percentage of "true" and percentage of "false".
+    * Make each bar in the chart have a different color.
+    * Some visually impaired users use a screen reader and can't see the contents of our visualization. Add a table below the visualization with the contents of the visualization.
+        * Optionally, add a button that toggles between the bar chart and the table instead of showing both. 
+* Data Filtering:
+    * Add a filter that allows users to filter the dataset to only include rows where `sex` is equal to `Male`.
+    * Add a filter that allows users to specify an age range to include on their charts.
+* Advanced Charting:
+    * Try refactoring this visualization to a different chart type, such as a pie chart or polar area chart.
+        * Allow users to toggle between chart types.
+    * Create a new visualization that shows the percentage of each education category that makes over 50k in a year. This can be grouped, stacked, or any visualization that you think expresses this information.
+* State Management:
+    * Refactor the application to use a [Pinia](https://pinia.vuejs.org/) store for the census data rather than passing the census data from the parent to the individual components.
+
 ### Backend
-* placeholder task
-### Orchestration
-* placeholder task
-### Engineering
-* placeholder task
+* Add a PostgreSQL database to this application. Load the CSV into the database, and have the FastAPI backend read from the database instead of the CSV file.
+
+### Full Stack
+* Implement any of the "Filtering" tasks from the frontend section, but transmit the filter values to the backend and apply the filtering on the backend.
+* Add authentication (a username/password) to this application. Here are some helpful documents:
+    * [FastAPI Security](https://fastapi.tiangolo.com/tutorial/security/)
+    * [Helpful article on JWT Auth in FastAPI](https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/)
