@@ -33,7 +33,7 @@ onMounted(() => {
     return acc
   }, [])
 
-  // generate a dataset for the cateogires
+  // generate a dataset for the categories
   // using a chartjs bar chart
   // dataset definition here
   // https://www.chartjs.org/docs/latest/charts/bar.html

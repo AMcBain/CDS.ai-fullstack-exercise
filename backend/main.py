@@ -37,3 +37,7 @@ def read_item():
     
     # return to frontend
     return census_csv
+
+@app.get("/summary-stats")
+def get_summary_stats():
+    return {}
