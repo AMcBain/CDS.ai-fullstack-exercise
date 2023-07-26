@@ -1,8 +1,5 @@
 # CDS.ai Full-Stack Developer Exercise
 
-[[toc]]
-
-
 ## About this repository
 
 This repository includes a barebones full-stack web application built with the following technologies:
