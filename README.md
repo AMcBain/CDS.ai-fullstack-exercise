@@ -1,5 +1,8 @@
 # CDS.ai Full-Stack Developer Exercise
 
+[[toc]]
+
+
 ## About this repository
 
 This repository includes a barebones full-stack web application built with the following technologies:
@@ -16,6 +19,13 @@ This repository includes a barebones full-stack web application built with the f
 This application mimics a standard data visualization application at CDS.ai - a Python-based backend reads data, manipulates it, and returns it. A Javascript-based frontend retrieves this data from the backend and visualizes it.
 
 In this exercise, you will clone this repository and make changes from the list of tasks below.
+
+## The Exercise
+In this exercise, developer candidates are expected to spend no more than 2-4 hours on tasks of their choosing and provide their repository to our interviewers prior to their interview. The intent of this exercise is to give us a starting point for conversation rather than a boolean test of developer ability, so be prepared to talk about your solution(s) and any challenges you may have faced, as well as what you'd do with more time.
+
+We also understand that while this application is built using technologies we love at CDS.ai, they may be new to you! If wrapping your head around new-to-you technologies, languages and frameworks takes the bulk of your time and no tasks are completed, that's perfectly acceptable - just be prepared to talk about your experience.
+
+We also recognize that this exercise is new to us too - if you run into any technical hurdles, feel free to email alexharding@rti.org for any troubleshooting or questions.
 
 ---
 
@@ -49,7 +59,7 @@ Once installed and running, the backend will be available at `http://localhost:8
 
 ## Tasks
 
-What follows is a list of tasks you can perform in this repository. These are roughly separated into three buckets: frontend, backend, and full stack. Please spend no more than 4 hours total on this exercise, and be prepared to talk about your process in your upcoming interview.
+What follows is a list of tasks you can perform in this repository. These are roughly separated into three buckets: frontend, backend, and full stack. 
 
 ### Frontend
 
@@ -74,7 +84,7 @@ What follows is a list of tasks you can perform in this repository. These are ro
 ### Backend
 
 * Add a PostgreSQL database to this application. Load the CSV into the database, and have the FastAPI backend read from the database instead of the CSV file.
-* Finish `summary-stats` endpoint:
+* Finish the `summary-stats` endpoint present in the backend. A set of visualizations already exists on the frontend, but does not become visible unless data is returned from the `summary-stats` API endpoint. 
   * To see the expected output, check out `summary_stats.json`
   * For `sex`, `race`, and `education_level`, check out pandas `groupby`
   * For "bonus points", try adding a list of outliers to the `age` dictionary
