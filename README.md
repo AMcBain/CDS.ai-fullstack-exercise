@@ -15,45 +15,16 @@ This repository includes a barebones full-stack web application built with the f
 
 This application mimics a standard data visualization application at CDS.ai - a Python-based backend reads data, manipulates it, and returns it. A Javascript-based frontend retrieves this data from the backend and visualizes it.
 
-In this exercise, you will clone this repository and make changes from the list of tasks below.
-
 ## The Exercise
-In this exercise, developer candidates are expected to spend no more than 2-4 hours on tasks of their choosing and provide their repository to our interviewers prior to their interview. The intent of this exercise is to give us a starting point for conversation rather than a boolean test of developer ability, so be prepared to talk about your solution(s) and any challenges you may have faced, as well as what you'd do with more time.
+In this exercise, developer candidates are expected to spend no more than 2-4 hours on tasks of their choosing and provide their repository to our interviewers prior to their interview. This can be accomplished by forking this repository, using the repository template functionality in Github, or providing us with a compressed archive containing your application.
 
-We also understand that while this application is built using technologies we love at CDS.ai, they may be new to you! If wrapping your head around new-to-you technologies, languages and frameworks takes the bulk of your time and no tasks are completed, that's perfectly acceptable - just be prepared to talk about your experience.
+The intent of this exercise is to give us a starting point for conversation rather than a boolean test of developer ability, so be prepared to talk about your solution(s) and any challenges you may have faced, as well as what you'd do with more time.
+
+We understand that while this application is built using technologies we love at CDS.ai, they may be new to you! If wrapping your head around new-to-you technologies, languages and frameworks takes the bulk of your time and no tasks are completed, that's perfectly acceptable - just be prepared to talk about your experience.
 
 We also recognize that this exercise is new to us too - if you run into any technical hurdles, feel free to email alexharding@rti.org for any troubleshooting or questions.
 
 ---
-
-## Developer Setup
-
-This repository includes containerization using Docker. CDS.ai frequently uses Docker to containerize our applications so that they are more portable and infrastructure-agnostic. Using Docker to set up this application locally is fully optional, and may ease your speed of development as you don't have to install and debug environments for both Python and Javascript. If you would like to set up the Python and Javascript applications natively, see the "native" section below.
-
-### Docker
-
-Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
-
-From the root directory of this repository, run `docker-compose up`. This will build the Docker images for the frontend and backend and run both containers.
-
-Note that if you choose to use Docker for this application, you may need to rebuild images after adding dependencies to the frontend or backend during your exercise.
-
-### Native
-
-Alternatively, you can set up both the frontend and backend natively.
-
-#### Backend (Python)
-
-Install [Python 3.9 or later](https://www.python.org/downloads/). From the `backend` directory of this repository, use a Python dependency management strategy of your choosing and install the required packages with `pip install -r requirements.txt`. Then run `uvicorn main:app --reload` to run the development server.
-
-#### Frontend (Javascript)
-
-Install [Node.js 18 or later](https://nodejs.org/en/download). From the `frontend` directory of this repository, run `npm install` to install dependencies, and `npm run dev` to run the development server.
-
-### Usage
-
-Once installed and running, the backend will be available at `http://localhost:8000` and the frontend will be available at `http://localhost:5173`.
-
 ## Tasks
 
 What follows is a list of tasks you can perform in this repository. These are roughly separated into three buckets: frontend, backend, and full stack. 
@@ -96,3 +67,33 @@ What follows is a list of tasks you can perform in this repository. These are ro
 * Add authentication (a username/password) to this application. Here are some helpful documents:
   * [FastAPI Security](https://fastapi.tiangolo.com/tutorial/security/)
   * [Helpful article on JWT Auth in FastAPI](https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/)
+
+---
+
+## Developer Setup
+
+This repository includes containerization using Docker. CDS.ai frequently uses Docker to containerize our applications so that they are more portable and infrastructure-agnostic. Using Docker to set up this application locally is fully optional, and may ease your speed of development as you don't have to install and debug environments for both Python and Javascript. If you would like to set up the Python and Javascript applications natively, see the "native" section below.
+
+### Docker
+
+Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+
+From the root directory of this repository, run `docker-compose up`. This will build the Docker images for the frontend and backend and run both containers.
+
+Note that if you choose to use Docker for this application, you may need to rebuild images after adding dependencies to the frontend or backend during your exercise.
+
+### Native
+
+Alternatively, you can set up both the frontend and backend natively.
+
+#### Backend (Python)
+
+Install [Python 3.9 or later](https://www.python.org/downloads/). From the `backend` directory of this repository, use a Python dependency management strategy of your choosing and install the required packages with `pip install -r requirements.txt`. Then run `uvicorn main:app --reload` to run the development server.
+
+#### Frontend (Javascript)
+
+Install [Node.js 18 or later](https://nodejs.org/en/download). From the `frontend` directory of this repository, run `npm install` to install dependencies, and `npm run dev` to run the development server.
+
+### Usage
+
+Once installed and running, the backend will be available at `http://localhost:8000` and the frontend will be available at `http://localhost:5173`.
