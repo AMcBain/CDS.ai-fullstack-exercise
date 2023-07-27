@@ -18,7 +18,7 @@ This application mimics a standard data visualization application at CDS.ai - a 
 ## The Exercise
 In this exercise, developer candidates are expected to spend no more than 2-4 hours on tasks of their choosing and provide their repository to our interviewers prior to their interview. This can be accomplished by forking this repository, using the repository template functionality in Github, or providing us with a compressed archive containing your application.
 
-The intent of this exercise is to give us a starting point for conversation rather than a boolean test of developer ability, so be prepared to talk about your solution(s) and any challenges you may have faced, as well as what you'd do with more time.
+The intent of this exercise is to give us a starting point for conversation rather than a gatekeeping test of developer ability. Come prepared to talk about your solution(s) and any challenges you may have faced, as well as what you'd do with more time.
 
 We understand that while this application is built using technologies we love at CDS.ai, they may be new to you! If wrapping your head around new-to-you technologies, languages and frameworks takes the bulk of your time and no tasks are completed, that's perfectly acceptable - just be prepared to talk about your experience.
 
