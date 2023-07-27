@@ -16,7 +16,11 @@ This repository includes a barebones full-stack web application built with the f
 This application mimics a standard data visualization application at CDS.ai - a Python-based backend reads data, manipulates it, and returns it. A Javascript-based frontend retrieves this data from the backend and visualizes it.
 
 ## The Exercise
-In this exercise, developer candidates are expected to spend no more than 2-4 hours on tasks of their choosing and provide their repository to our interviewers prior to their interview. The intent of this exercise is to give us a starting point for conversation rather than a gatekeeping test of developer ability. Come prepared to talk about your solution(s) and any challenges you may have faced, as well as what you'd do with more time. We understand that while this application is built using technologies we love at CDS.ai, they may be new to you! If wrapping your head around new-to-you technologies, languages and frameworks takes the bulk of your time and no tasks are completed, that's perfectly acceptable - just be prepared to talk about your experience. We also recognize that this exercise is new to us too - if you run into any technical hurdles, feel free to email alexharding@rti.org for any troubleshooting or questions.
+In this exercise, developer candidates are expected to spend no more than 2-4 hours on tasks of their choosing and provide their repository to our interviewers prior to their interview. 
+
+The intent of this exercise is to give us a starting point for conversation rather than a gatekeeping test of developer ability. Come prepared to talk about your solution(s) and any challenges you may have faced, as well as what you'd do with more time. 
+
+We understand that while this application is built using technologies we love at CDS.ai, they may be new to you! If wrapping your head around new-to-you technologies, languages and frameworks takes the bulk of your time and no tasks are completed, that's perfectly acceptable - just be prepared to talk about your experience. We also recognize that this exercise is new to us too - if you run into any technical hurdles, feel free to email alexharding@rti.org for any troubleshooting or questions.
 
 For delivery, please choose one of the following options:
 * Use the repository template feature to create your own version of this repository, and either provide us with a link if public or reach out to our HR contact for a list of usernames to grant access to if private
