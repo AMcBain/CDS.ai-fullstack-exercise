@@ -84,6 +84,14 @@ From the root directory of this repository, run `docker-compose up`. This will b
 
 Note that if you choose to use Docker for this application, you may need to rebuild images after adding dependencies to the frontend or backend during your exercise.
 
+For the frontend, we are following a common docker-compose pattern in which we redirect `node_modules` to an empty volume. The reason for this is because `npm install` will often include OS-dependent binaries, so this allows the `node_module` folder to be separate for local and container development. If you wish to install dependencies into the frontend while using docker for development, you must do so *inside of the container*`. You can do so in either of the following ways:
+
+```bash
+docker exec -it cds.ai-fullstack-frontend sh ## opens an interactive terminal inside of the docker container
+
+docker exec -it cds.ai-fullstack-frontend npm install --save library-name-here ## installs libraries
+```
+
 ### Native
 
 Alternatively, you can set up both the frontend and backend natively.
