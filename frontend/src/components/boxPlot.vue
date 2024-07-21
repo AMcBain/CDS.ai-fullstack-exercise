@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUpdate } from 'vue'
 import { Chart } from 'chart.js/auto'
 import { BoxPlotChart } from "@sgratzl/chartjs-chart-boxplot"
 
@@ -17,6 +17,24 @@ const props = defineProps({
 // using a template ref instead of the DOM element
 // https://vuejs.org/guide/essentials/template-refs.html
 const chartCanvas = ref(null)
+let chart = null
+
+function mapData() {
+  return [{
+    label: "Age",
+    data: [
+      {
+        min: props.summStats.min,
+        q1: props.summStats['25%'],
+        median: props.summStats['50%'],
+        q3: props.summStats['75%'],
+        max: props.summStats.max,
+        mean: props.summStats.mean,
+        outliers: props.summStats.outliers || []
+      }
+    ]
+  }]
+}
 
 // using the onMounted lifecycle hook
 // this way we don't try and build the chart until the DOM has rendered
@@ -24,24 +42,11 @@ const chartCanvas = ref(null)
 onMounted(() => {
   // draw box plot
   // https://github.com/sgratzl/chartjs-chart-boxplot
-  new BoxPlotChart(chartCanvas.value, {
+  chart = new BoxPlotChart(chartCanvas.value, {
     type: 'boxplot',
     data: {
       labels: [""],
-      datasets: [{
-        label: "Age",
-        data: [
-          {
-            min: props.summStats.min,
-            q1: props.summStats['25%'],
-            median: props.summStats['50%'],
-            q3: props.summStats['75%'],
-            max: props.summStats.max,
-            mean: props.summStats.mean,
-            outliers: props.summStats.outliers || []
-          }
-        ]
-      }]
+      datasets: mapData()
     },
     options: {
       scales: {
@@ -59,6 +64,10 @@ onMounted(() => {
       }
     }
   })
+})
+onBeforeUpdate(() => {
+  chart.data.datasets = mapData()
+  chart.update()
 })
 </script>
 <template>
